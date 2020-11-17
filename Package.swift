@@ -8,6 +8,8 @@ let package = Package(
         .library(name: "MapKitSearchView", targets: ["MapKitSearchView"]),
     ],
     targets: [
-        .target(name: "MapKitSearchView", path: "Sources")
+        .target(name: "MapKitSearchView", 
+        		path: "Sources",
+        		resources: [.copy("Sources/MapKitSearchView.xib")])
     ]
 )
